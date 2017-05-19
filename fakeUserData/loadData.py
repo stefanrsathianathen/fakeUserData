@@ -3,7 +3,7 @@
 open and save data into lists (Pretty large datasets)
 '''
 
-text_file = open( 'domains.txt', "r")
+text_file = open( 'fakeUserData\domains.txt', "r")
 domains = text_file.read().split(',')
 text_file.close()
 
