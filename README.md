@@ -25,6 +25,8 @@ from fakeUserData import generator as g
 ```
 >>g.firstName()
 'Tommye'
+>>g.firstName('Female')
+'Rosalina'
 ```
 ### Generate Last Name
 ```
