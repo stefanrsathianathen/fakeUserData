@@ -3,9 +3,12 @@
 open and save data into lists (Pretty large datasets)
 '''
 
-text_file = open( 'fakeUserData\domains.txt', "r")
-domains = text_file.read().split(',')
-text_file.close()
+domains = []
+with open('domains.csv') as csvfile:
+    readCSV = csv.reader(csvfile, delimiter=',')
+    for row in readCSV:
+    	for x in row:
+    		domains.append(x)
 
 text_file = open('lastNames.txt', "r")
 lastNames = text_file.read().split(',')
