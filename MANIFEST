@@ -3,5 +3,6 @@ setup.cfg
 setup.py
 fakeUserData\__init__.py
 fakeUserData\ccgen.py
+fakeUserData\dataClean.py
 fakeUserData\generator.py
 fakeUserData\loadData.py
