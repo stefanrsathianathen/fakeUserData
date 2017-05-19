@@ -2,7 +2,7 @@
 '''
 open and save data into lists (Pretty large datasets)
 '''
-
+import csv
 domains = []
 with open('domains.csv') as csvfile:
     readCSV = csv.reader(csvfile, delimiter=',')
