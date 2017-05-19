@@ -1,26 +1,27 @@
 # Read in the file
-name = 'streetSuffixes'
+name = 'domains'
 
 
 f=open(name+'.txt',"r")
-lines=f.readlines()
+lines=f.read().split(',')
 f.close()
-import random
 with open(name+'.txt', 'w') as file:
 	for x in lines:
+		file.write("'")
 		file.write(x)
+		file.write("'")
 		file.write(',')
 
 
 
-with open(name+'.txt', 'r') as file :
-  filedata = file.read()
+# with open(name+'.txt', 'r') as file :
+#   filedata = file.read()
 
-# Replace the target string
-filedata = filedata.replace('\n','')
+# # Replace the target string
+# filedata = filedata.replace('\n',',')
 
-# Write the file out again
-with open(name+'.txt', 'w') as file:
-  file.write(filedata)
+# # Write the file out again
+# with open(name+'.txt', 'w') as file:
+#   file.write(filedata)
 
 
