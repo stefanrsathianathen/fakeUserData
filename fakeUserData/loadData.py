@@ -9,6 +9,7 @@ with open('domains.csv') as csvfile:
     for row in readCSV:
     	for x in row:
     		domains.append(x)
+print(domains)
 
 text_file = open('lastNames.txt', "r")
 lastNames = text_file.read().split(',')
