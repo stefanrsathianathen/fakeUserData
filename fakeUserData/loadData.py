@@ -3,50 +3,82 @@
 open and save data into lists (Pretty large datasets)
 '''
 import csv
+
+
 domains = []
 with open('domains.csv') as csvfile:
     readCSV = csv.reader(csvfile, delimiter=',')
     for row in readCSV:
     	for x in row:
     		domains.append(x)
-print(domains)
 
-text_file = open('lastNames.txt', "r")
-lastNames = text_file.read().split(',')
-text_file.close()
 
-text_file = open('firstNames.txt', "r")
-firstNames = text_file.read().split(',')
-text_file.close()
+lastNames = []
+with open('lastNames.csv') as csvfile:
+    readCSV = csv.reader(csvfile, delimiter=',')
+    for row in readCSV:
+    	for x in row:
+    		lastNames.append(x)
 
-text_file = open( 'maleNames.txt', "r")
-maleNames = text_file.read().split(',')
-text_file.close()
+firstNames = []
+with open('firstNames.csv') as csvfile:
+    readCSV = csv.reader(csvfile, delimiter=',')
+    for row in readCSV:
+    	for x in row:
+    		firstNames.append(x)
 
-text_file = open('femaleNames.txt', "r")
-femaleNames = text_file.read().split(',')
-text_file.close()
+maleNames = []
+with open('maleNames.csv') as csvfile:
+    readCSV = csv.reader(csvfile, delimiter=',')
+    for row in readCSV:
+    	for x in row:
+    		maleNames.append(x)
 
-text_file = open('randomChar.txt',"r")
-randomChar = text_file.read().split(',')
-text_file.close()
+femaleNames = []
+with open('femaleNames.csv') as csvfile:
+    readCSV = csv.reader(csvfile, delimiter=',')
+    for row in readCSV:
+    	for x in row:
+    		femaleNames.append(x)
 
-text_file = open('countries.txt',"r")
-countries = text_file.read().split(',')
-text_file.close()
+randomChar = []
+with open('randomChar.csv') as csvfile:
+    readCSV = csv.reader(csvfile, delimiter=',')
+    for row in readCSV:
+    	for x in row:
+    		randomChar.append(x)
 
-text_file = open('streetNames.txt',"r")
-streetNames = text_file.read().split(',')
-text_file.close()
+countries = []
+with open('countries.csv') as csvfile:
+    readCSV = csv.reader(csvfile, delimiter=',')
+    for row in readCSV:
+    	for x in row:
+    		countries.append(x)
 
-text_file = open('streetSuffixes.txt',"r")
-streetSuffixes = text_file.read().split(',')
-text_file.close()
+streetNames = []
+with open('streetNames.csv') as csvfile:
+    readCSV = csv.reader(csvfile, delimiter=',')
+    for row in readCSV:
+    	for x in row:
+    		streetNames.append(x)
 
-text_file = open('cities.txt',"r")
-cities = text_file.read().split(',')
-text_file.close()
+streetSuffixes = []
+with open('streetSuffixes.csv') as csvfile:
+    readCSV = csv.reader(csvfile, delimiter=',')
+    for row in readCSV:
+    	for x in row:
+    		streetSuffixes.append(x)
 
-text_file = open('states.txt',"r")
-states = text_file.read().split(',')
-text_file.close()
+cities = []
+with open('cities.csv') as csvfile:
+    readCSV = csv.reader(csvfile, delimiter=',')
+    for row in readCSV:
+    	for x in row:
+    		cities.append(x)
+
+states = []
+with open('states.csv') as csvfile:
+    readCSV = csv.reader(csvfile, delimiter=',')
+    for row in readCSV:
+    	for x in row:
+    		states.append(x)
