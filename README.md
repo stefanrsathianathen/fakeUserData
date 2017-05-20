@@ -100,13 +100,13 @@ from fakeUserData import generator as g
 >>> g.zipCode()
 '22287'
 ```
-### random Date
+### Random Date
 #### Follows same return format as birthday
 ```
 >>> g.randomDate()
 (6, 12, 1928)
 ```
-### id Number
+### ID Number
 ### Takes one optional parameter of length of the id number
 ```
 >>> g.id()
