@@ -1,5 +1,5 @@
 # fakeUserData
-#### A python package that generates fake user data for testing purposes
+#### fakeUserData is a Python package that generates fake data for you
 
 ## Installation
 ```
